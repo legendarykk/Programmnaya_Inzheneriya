@@ -26,5 +26,5 @@
 
 ### Результаты выполнения.
 1
-![Screenshot #1](legendarykk/Programmnaya_Inzheneriya/blob/Tema1/pics/1.png)
+![Screenshot #1](legendarykk/Programmnaya_Inzheneriya/blob/Tema1/pics/1.png?raw=true)
 
