@@ -23,3 +23,6 @@
 
 Работу проверили:
 - к.э.н., доцент Панов М.А.
+### Результаты выполнения.
+1
+![1](https://github.com/legendarykk/Programmnaya_Inzheneriya/blob/Tema_1/pics/Скрин%201.png)
