@@ -25,4 +25,5 @@
 - к.э.н., доцент Панов М.А.
 ### Результаты выполнения.
 1
-![Screenshot #1](egendarykk/Programmnaya_Inzheneriya/blob/Tema_1/pics/Скрин%201.png)
+![Screenshot #1](legendarykk/Programmnaya_Inzheneriya/blob/Tema_1/pics/1.png)
+
