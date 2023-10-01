@@ -119,3 +119,23 @@ print(sentence.count('o'))
 ```
 #### Результат:
 ![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/dd2c80d4-998a-48f6-b693-2e19910de1b6)
+
+## Задание №9
+### Напишите предложение ‘Hello World’ в две строки. Написанная программа должна занимать одну строку в редакторе кода.
+#### Выполнение:
+```python
+print("Hello\nWorld")
+```
+#### Результат:
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/53783493-6ec9-44b0-a650-0c502d76b15c)
+
+## Задание №10
+### Из предложения ‘Hello World’ выведите в консоль только 2 символ, а затем выведите слово ‘Hello’.
+#### Выполнение:
+```python
+sentence = "Hello World"
+print(sentence[1])
+print(sentence[:5])
+```
+#### Результат:
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/9e4b369f-15cf-4e50-b6d2-ba0acb32abb5)
