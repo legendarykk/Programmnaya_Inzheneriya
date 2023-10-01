@@ -1,4 +1,4 @@
-![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/a3196f8f-327e-4396-a854-a17b280df605)![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/d31ffdb9-c31f-4856-92cb-3c19888ce620)![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/f51efc8c-af96-4b47-8208-077aaf03eee2) # Тема 2. Базовые операции языка Python
+# Тема 2. Базовые операции языка Python
 ### Отчет по Теме #2 выполнил:
 - Трофименко Артем Сергеевич
 - ПИЭ-21-2
