@@ -22,24 +22,24 @@
 ## Лабораторная работа 
 ## Задание №1
 ### Выведите в консоль три строки. Первая – любое число. Вторая – любое число в виде строки. Третья – любое число с плавающей точкой.
-### Выполнение:
+#### Выполнение:
 ```python
 print(123)
 print('123')
 print(1.23)
 ```
-### Результат:
+#### Результат:
 ![Lab1](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/d48383ae-8f74-451e-b575-322452a64040)
 
 ## Задание №2
 ### Выведите в консоль три строки. Первая – результат сложения или вычитания минимум двух переменных типа int. Вторая – результат сложения или вычитания минимум двух переменных типа float. Третья – результат сложения или вычитания минимум двух переменных типа int и float.
-### Выполнение:
+#### Выполнение:
 ```python
 print(1823-486)
 print(5.1 + 8.27)
 print(3 + 7.04 + 1 + 2.33)
 ```
-### Результат:
+#### Результат:
 ![Lab2](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/3d9d08fc-58ec-4a3b-87ba-435b25394633)
 
 ## Задание №3
@@ -57,3 +57,31 @@ print(one + two)
 ```
 #### Результат:
 ![Lab3](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/f115b15d-1608-43f6-b10f-246611b3f0e7)
+
+## Задание №4
+### Выведите в консоль три строки. Первая – трансформация любого типа переменной в bool. Вторая – трансформация любого типа переменной в float или int. Третья – трансформация любого типа переменной в str.
+#### Выполнение:
+```python
+one = 'Hello'
+print(bool(one))
+
+two = 142
+print(float(two))
+
+three = None
+print(str(three))
+```
+#### Результат:
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/33ee491c-fb09-4ebc-9d02-289528e0b0d3)
+
+## Задание №5
+### Присвойте трем переменным различные значения, воспользовавшись функцией input().
+#### Выполнение:
+```python
+one = input('one:')
+two = input('two:')
+three = input('three:')
+print(one, two, three)
+```
+#### Результат:
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/8945c99b-87c3-49e7-b007-a5e2ba6b1901)
