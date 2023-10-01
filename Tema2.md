@@ -1,4 +1,4 @@
- # Тема 2. Базовые операции языка Python
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/a3196f8f-327e-4396-a854-a17b280df605)![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/d31ffdb9-c31f-4856-92cb-3c19888ce620)![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/f51efc8c-af96-4b47-8208-077aaf03eee2) # Тема 2. Базовые операции языка Python
 ### Отчет по Теме #2 выполнил:
 - Трофименко Артем Сергеевич
 - ПИЭ-21-2
@@ -145,10 +145,10 @@ print(sentence[:5])
 ### Выведите в консоль булевую переменную False, не используя слово False в строке или изначально присвоенную булевую переменную. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+print(1 == 2)
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/28ee0ca8-469b-4f3c-ab44-5a0836b83085)
 
 #### Вывод:
 
@@ -156,10 +156,11 @@ print(sentence[:5])
 ### Присвоить значения трем переменным и вывести их в консоль, используя только две строки редактора кода.
 #### Выполнение:
 ```python
-
+a = b = c = 1
+print(a,b,c)
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/9172fd6f-b830-4701-86df-8bbe1403d39a)
 
 #### Вывод:
 
@@ -167,10 +168,10 @@ print(sentence[:5])
 ### Реализуйте ввод данных в программу, через консоль, в виде только целых чисел (тип данных int). То есть при вводе буквенных символов в консоль, программа не должна работать. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+a = int(input())
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/d7dcb3c4-cb93-4a81-b0dc-30dcfdd93ffa)
 
 #### Вывод:
 
@@ -178,10 +179,11 @@ print(sentence[:5])
 ### Создайте только одну строковую переменную. Длина строки должна не превышать 5 символов. На выходе мы должны получить строку длиной не менее 16 символов. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+a = 'test'
+print(a*5)
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/09571491-f753-44d7-a509-575367918520)
 
 #### Вывод:
 
@@ -189,10 +191,11 @@ print(sentence[:5])
 ### Создайте три переменные: день (тип данных - числовой), месяц (тип данных - строка), год (тип данных - числовой) и выведите в консоль текущую дату в формате: “Сегодня день месяц год. Всего хорошего!” используя F строку и оператор end внутри print(), в котором вы должны написать фразу “Всего хорошего!”. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+a = 1; b = "10"; c = 2023
+print(f"Сегодня {a}.{b}.{c}.",end=" Всего хорошего!")
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/aff46802-9acc-420c-96ad-2fd61d50af0a)
 
 #### Вывод:
 
@@ -200,10 +203,11 @@ print(sentence[:5])
 ### В предложении ‘Hello World’ вставьте ‘my’ между двумя словами. Выведите полученное предложение в консоль в одну строку. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+a = 'my'
+print("Hello", a, "World")
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/7db2e330-7a2e-48bc-98cb-0612e1a1b990)
 
 #### Вывод:
 
@@ -211,10 +215,10 @@ print(sentence[:5])
 ### Узнайте длину предложения ‘Hello World’, результат выведите в консоль. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+print(len("Hello World"))
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/03b16235-f020-44e7-8bea-8c89a380f003)
 
 #### Вывод:
 
@@ -222,10 +226,11 @@ print(sentence[:5])
 ### Переведите предложение ‘HELLO WORLD’ в нижний регистр. Программа должна занимать не более двух строк редактора кода.
 #### Выполнение:
 ```python
-
+a = "HELLO WORLD"
+print(a.lower())
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/e0e7c1d9-e855-4d56-ac7a-14ed797ec134)
 
 #### Вывод:
 
@@ -233,10 +238,11 @@ print(sentence[:5])
 ### Округлите числовую переменную.
 #### Выполнение:
 ```python
-
+a = 132.7
+print(round(a))
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/b366ade6-d03a-49b7-bdb9-d98bee3d8255)
 
 #### Вывод:
 
@@ -244,9 +250,10 @@ print(sentence[:5])
 ### Определить есть ли в заданной строке символ "а" и найти индекс его первого вхождения.
 #### Выполнение:
 ```python
-
+a = "I am Artem"
+print(a.find('a'))
 ```
 #### Результат:
-
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/b15fe94d-cb35-40a9-ba9c-a1c7f04bb07b)
 
 #### Вывод:
