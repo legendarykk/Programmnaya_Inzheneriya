@@ -49,6 +49,7 @@ elif 0 < one < 10:
 else:
     print('Переменная больше 10')
 ```
+
 #### Результат:
 Вариант 1:
 ![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/a68cfe08-5a0b-4a9c-8480-43d90e57d70a)
