@@ -216,7 +216,7 @@ mostCommon = Counter(receipts).most_common(1)
 print("Самый посещаемый работник:", mostCommon[0][0])
 ```
 #### Результат:
-![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/dd536e06-09cb-41bf-a19c-f304d58dea46)
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/e20e0dd0-e0cc-4587-bc5c-9de0657111d9)
 
 #### Вывод: Мы начинаем с подсчета общего количества чеков в предоставленном списке. Далее мы находим количество разных посетителей, используя структуру набора (set) в Python, которая автоматически убирает повторяющиеся элементы. Наконец, мы определяем, какой работник посетил ресторан больше всего раз. Для этого мы используем модуль collections в Python, после выполнения всех трех действий мы получаем ответ на задачу.
 
