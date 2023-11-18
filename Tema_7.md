@@ -63,62 +63,63 @@ if __name__ == "__main__":
 ### У вас появилась потребность в ведении книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не устраивает и нужно все делать самому. Напишите программу для учета расходов. Программа должна позволять вводить информацию о расходах, сохранять ее в файл и выводить существующие данные в консоль. Ввод информации происходит через консоль. Результатом выполнения задачи будет: скриншот файла с учетом расходов, листинг кода, и вывод в консоль, с демонстрацией работоспособности программы.
 #### Выполнение:
 ```python
+import csv
 import os
-import json
+import datetime
 
-def load_expenses():
-    expenses_file = 'expenses.json'
-    if os.path.exists(expenses_file):
-        with open(expenses_file, 'r') as file:
-            expenses_data = json.load(file)
-        return expenses_data
-    else:
-        return []
+def create_expenses_file(file_name):
+    with open(file_name, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Дата', 'Сумма', 'Трата'])
 
-def save_expenses(expenses_data):
-    expenses_file = 'expenses.json'
-    with open(expenses_file, 'w') as file:
-        json.dump(expenses_data, file, indent=2)
+def add_expense(file_name, amount, expense):
+    date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    with open(file_name, 'a', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([date, amount, expense])
 
-def add_expense():
-    date = input("Введите дату расхода (в формате ДД.ММ.ГГГГ): ")
-    description = input("Введите описание расхода: ")
-    amount = float(input("Введите сумму расхода: "))
-
-    return {"date": date, "description": description, "amount": amount}
-
-def display_expenses(expenses_data):
-    print("\nТекущие расходы:")
-    for expense in expenses_data:
-        print(f"{expense['date']} | {expense['description']} | {expense['amount']}")
+def display_expenses(file_name):
+    with open(file_name, 'r', encoding='cp1251', errors='replace') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            print(row)
 
 def main():
-    expenses_data = load_expenses()
+    expenses_file = "expenses.csv"
+
+    if not os.path.isfile(expenses_file):
+        create_expenses_file(expenses_file)
 
     while True:
-        print("\n1. Ввести новый расход")
-        print("2. Показать текущие расходы")
+        print("\nВыберите действие:")
+        print("1. Добавить расход")
+        print("2. Просмотреть расходы")
         print("3. Выйти")
 
-        choice = input("Выберите действие (1/2/3): ")
+        choice = input("Введите номер действия: ")
 
-        if choice == '1':
-            new_expense = add_expense()
-            expenses_data.append(new_expense)
-            save_expenses(expenses_data)
+        if choice == "1":
+            amount = input("Введите сумму расхода: ")
+            expense = input("Введите трать: ")
+            add_expense(expenses_file, amount, expense)
             print("Расход успешно добавлен!")
-        elif choice == '2':
-            display_expenses(expenses_data)
-        elif choice == '3':
+
+        elif choice == "2":
+            display_expenses(expenses_file)
+
+        elif choice == "3":
+            print("Программа завершена.")
             break
+
         else:
-            print("Некорректный ввод. Пожалуйста, выберите 1, 2 или 3.")
+            print("Некорректный ввод. Пожалуйста, выберите существующий вариант.")
 
 if __name__ == "__main__":
     main()
 ```
 #### Результат:
-![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/65235063-b6cf-49d5-94bc-aa987f9a240f)
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/f478d377-0a5d-4e0b-b74a-31e630e481f6)
+![image](https://github.com/legendarykk/Programmnaya_Inzheneriya/assets/146570109/da4adfcb-098e-49b7-9690-aff079d38d77)
 
 #### Вывод: Эта программа на Python предоставляет простой механизм учета расходов через консоль. Пользователь может вводить информацию о расходах, которая сохраняется в файле `expenses.json`, и просматривать текущие расходы. Программа обеспечивает удобный способ отслеживания финансов и может быть легко расширена для добавления дополнительных функциональностей по необходимости.
 
